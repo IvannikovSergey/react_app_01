@@ -1,14 +1,14 @@
 import './NewCost.css';
 import CostForm from './CostForm';
 
-const NewCost = () => {
+const NewCost = (props) => {
 
     const saveDataHandler = (inputCostData) => {
         const costData = {
             ...inputCostData,
             id: Math.random().toFixed(7).toString()
         }
-        console.log(costData);
+        props.onAddCost(costData)
     }
 
     return <div className="new-cost">
