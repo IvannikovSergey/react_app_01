@@ -10,6 +10,7 @@ function CostItem(props) {
   //   setDescription('New state');
   // }
   return (
+    <li>
     <Card className="cost-item">
       <CostDate date={props.date} />
       <div className="cost-item__description">
@@ -17,7 +18,8 @@ function CostItem(props) {
         <div className="cost-item__price">${props.amount}</div>
       </div>
       {/* <button onClick={chanchDescritionHandler}>Изменить описание</button> */}
-    </Card>
+      </Card>
+    </li>
   );
 }
 
