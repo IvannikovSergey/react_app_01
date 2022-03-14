@@ -13,7 +13,7 @@ const CostList = (props) => {
             key={cost.id}
             date={cost.date}
             description={cost.description}
-            amount={cost.amount} />))};
+            amount={cost.amount} />))}
     </ul>
 }
 
